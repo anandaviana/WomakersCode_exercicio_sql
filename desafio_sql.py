@@ -109,7 +109,7 @@ for cliente in dados_cliente:
 cursor.execute('INSERT INTO compras(id, cliente_id, produto, valor) VALUES(1, 2, "Livro", 35.9)')
 cursor.execute('INSERT INTO compras(id, cliente_id, produto, valor) VALUES(2, 2, "Caderno", 20.90)')
 cursor.execute('INSERT INTO compras(id, cliente_id, produto, valor) VALUES(3, 1, "Caneta", 2.50)')
-cursor.execute('INSERT INTO compras(id, cliente_id, produto, valor) VALUES(4, 1, "Mochila", 120.00')')
+cursor.execute('INSERT INTO compras(id, cliente_id, produto, valor) VALUES(4, 1, "Mochila", 120.00')
 cursor.execute('INSERT INTO compras(id, cliente_id, produto, valor) VALUES(5, 2, "Estojo", 15.00)')
 
 consulta = cursor.execute('SELECT clientes.nome, compras.produto, compras.valor FROM clientes INNER JOIN compras ON clientes.id = compras.cliente_id')
