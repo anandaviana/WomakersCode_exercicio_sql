@@ -38,4 +38,5 @@ for usuario in dados:
   print(usuario)
 
 conexao.commit()
-conexao.close
+conexao.close 
+
